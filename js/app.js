@@ -7,7 +7,7 @@ buttons.forEach(button => {
     
     if ( button.classList.contains('btn-left')) {
       
-      if( c < 0 ){
+      if( c < 0 ) {
         c = 4;
       }
       bgPicture.style.background = `url("../img/contBcg-${c}.jpeg")`;
@@ -15,11 +15,11 @@ buttons.forEach(button => {
     }
     else if (button.classList.contains('btn-right')) {
 
-      if( c < 4) {
+      if( c < 4 ) {
         c++;
       } else {
         c = 0;
-      }
+        }
       bgPicture.style.background = `url("../img/contBcg-${c}.jpeg")`;
     }
   })
